@@ -1,4 +1,16 @@
-<form action="/pred" method="post">
+
+<html>
+    
+<head>
+    <style>
+    h1 {text-align: center;}
+    h2 {text-align: center;}
+    form{text-align: center;}
+    </style>
+</head>
+<body>
+<h1> Prediction of Car Price </h1>
+<form action="/pred" method="post" >
     <label>Enter Company Name : </label>
     <input type="text" name="make_in">
     <br>
@@ -107,4 +119,7 @@
     
     </form>
 
-    <h1> Predicted Car Price $ {{price}} </h1>
+    <h2> Predicted Car Price : $ {{price}}</h2>
+
+</body>
+</html>
