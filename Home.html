@@ -1,0 +1,125 @@
+
+<html>
+    
+<head>
+    <style>
+    h1 {text-align: center;}
+    h2 {text-align: center;}
+    form{text-align: center;}
+    </style>
+</head>
+<body>
+<h1> Prediction of Car Price </h1>
+<form action="/pred" method="post" >
+    <label>Enter Company Name : </label>
+    <input type="text" name="make_in">
+    <br>
+    <br>
+    
+    <label>Fuel type : </label>
+    <select name="fuel">
+    <option value="0"> gas</option>
+    <option value="1">diesel</option>
+    </select>
+    <br>
+    <br>
+    
+    <label>Body Style : </label>
+    <select name="body_style">
+    <option value="convertible">convertible</option>
+    <option value="hardtop">hardtop</option>
+    <option value="hatchback">hatchback</option>
+    <option value="sedan">sedan</option>
+    <option value="wagon">wagon</option>
+    </select>
+    <br>
+    <br>
+    
+    <label>Wheel Drive : </label>
+    <select name="wheel_drive">
+    <option value="4wd">4wd</option>
+    <option value="fwd">fwd</option>
+    <option value="rwd">rwd</option>
+    </select>
+    <br>
+    <br>
+    
+    <label>Engine Location : </label>
+    <select name="engine_location">
+    <option value="front">front</option>
+    <option value="rear">rear</option>
+    </select>
+    <br>
+    <br>
+    
+    <label>Engine Type : </label>
+    <select name="engine_type">
+    <option value="dohc">dohc</option>
+    <option value="dohcv">dohcv</option>
+    <option value="l">l</option>
+    <option value="ohc">ohc</option>
+    <option value="ohcf">ohcf</option>
+    <option value="ohcv">ohcv</option>
+    <option value="rotor">rotor</option>
+    </select>
+    <br>
+    <br>
+    
+    <label>Symboling : </label>
+    <select name="symboling">
+    <option value="-2">-2</option>
+    <option value="-1">-1</option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    </select>
+    <br>
+    <br>
+    
+    <label>Normalized loss : </label>
+    <input type="text" name="normalized_loss">
+    <br>
+    <br>
+    
+    <label>Width : </label>
+    <input type="text" name="width">
+    <br>
+    <br>
+    
+    <label>Height : </label>
+    <input type="text" name="height">
+    <br>
+    <br>
+    
+    
+    <label>Engine Size : </label>
+    <input type="text" name="engine_size">
+    <br>
+    <br>
+    
+    
+    <label>Horsepower : </label>
+    <input type="text" name="horsepower">
+    <br>
+    <br>
+    
+    
+    <label>City Mileage : </label>
+    <input type="text" name="city_mpg">
+    <br>
+    <br>
+    
+    <label>Highway Mileage : </label>
+    <input type="text" name="highway_mpg">
+    <br>
+    <br>
+    
+    <input type="submit" value="check">
+    
+    </form>
+
+    <h2> Predicted Car Price : {{price}}</h2>
+
+</body>
+</html>
